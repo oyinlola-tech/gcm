@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G.C.M | Global Crypto Miners</title>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Minimal Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+    html { scroll-behavior: smooth; }
+    .cta-transition { transition: all 0.15s ease; }
+    .cta-transition:hover { transform: translateY(-2px); box-shadow: 0 8px 16px -4px rgba(0,0,0,0.1); }
+    /* FAQ accordion smoothness */
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+    .faq-item.active .faq-content { max-height: 300px; }
+    .faq-item .faq-icon { transition: transform 0.2s; }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F172A',      // deep navy – trustworthy
+            secondary: '#2D5A6B',    // muted teal – subtle accent
+            surface: '#FFFFFF',
+            'on-surface': '#1E293B',
+            'surface-alt': '#F8FAFC',
+            border: '#E2E8F0'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+<!-- Sticky Header – minimal, conversion focused -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-2xl">precision_manufacturing</span>
+      <span class="text-xl font-bold tracking-tight text-primary">G.C.M</span>
+    </div>
+    <a href="#purchase" class="bg-primary text-white px-5 py-2 text-sm font-semibold rounded-full hover:bg-primary/90 transition">I WANT TO PURCHASE</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO – clean, bold -->
+  <section class="relative bg-surface-alt px-6 py-24 md:py-32 overflow-hidden">
+    <div class="max-w-4xl mx-auto relative z-10">
+      <h1 class="text-primary text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">GLOBAL CRYPTO MINERS (G.C.M)</h1>
+      <p class="text-on-surface/80 text-xl md:text-2xl leading-relaxed mb-8 max-w-3xl">WE MINE & SELL ALL TYPES OF SPECIAL CRYPTO CURRENCIES FOR</p>
+      <div class="w-20 h-0.5 bg-secondary mb-10"></div>
+      <a href="#purchase" class="cta-transition inline-flex items-center gap-3 bg-primary text-white px-8 py-4 font-semibold rounded-lg">
+        I WANT TO PURCHASE
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+    <div class="absolute right-[-5%] top-[10%] opacity-5 select-none pointer-events-none">
+      <span class="material-symbols-outlined text-[350px]">token</span>
+    </div>
+  </section>
+
+  <!-- USE CASES – grid -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-semibold text-primary mb-10">Use cases</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">monetization_on</span><h3 class="font-semibold text-primary">Monetization</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">account_balance</span><h3 class="font-semibold text-primary">Bank & Platform Traders</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">receipt_long</span><h3 class="font-semibold text-primary">Proof Of Funds</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">finance</span><h3 class="font-semibold text-primary">Finance Audits</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">bug_report</span><h3 class="font-semibold text-primary">Project/Software Testing</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">school</span><h3 class="font-semibold text-primary">Blockchain Education/Training</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">show_chart</span><h3 class="font-semibold text-primary">Mock Trading</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">cycle</span><h3 class="font-semibold text-primary">Closed - Loop Incentive Systems</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">simulation</span><h3 class="font-semibold text-primary">Internal Simulations</h3></div>
+      <div class="p-5 bg-white border border-slate-200 rounded-xl hover:border-secondary/40 transition"><span class="material-symbols-outlined text-secondary mb-3 block">code</span><h3 class="font-semibold text-primary">Demo For Developers Etc</h3></div>
+    </div>
+  </section>
+
+  <!-- AVAILABLE COINS – clean table -->
+  <section class="py-16 px-6 bg-surface-alt">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-primary mb-10">AVAILABLE COINS & TOKENS</h2>
+      <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-sm">
+        <table class="w-full text-left">
+          <thead class="bg-primary text-white">
+            <tr><th class="px-6 py-4 font-semibold uppercase tracking-wider text-sm">Asset</th><th class="px-6 py-4 font-semibold uppercase tracking-wider text-sm">Availability</th></tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr><td class="px-6 py-4 font-medium">USDT.z (Db4)</td><td class="px-6 py-4 text-secondary font-semibold">Up To 5 Billion Units</td></tr>
+            <tr><td class="px-6 py-4 font-medium">USDT.z (520)</td><td class="px-6 py-4 text-secondary font-semibold">Up To 5 Billion Units</td></tr>
+            <tr><td class="px-6 py-4 font-medium">BNBTIGER (2CD)</td><td class="px-6 py-4 text-secondary font-semibold">Up To 26 Digits</td></tr>
+            <tr><td class="px-6 py-4 font-medium">BTCBR (F262)</td><td class="px-6 py-4 text-secondary font-semibold">Up To 24 Digits Units</td></tr>
+            <tr><td class="px-6 py-4 font-medium">USDT (Flash) On BEP20</td><td class="px-6 py-4 text-secondary font-semibold">Up To 100 Trillion Units (15 Digits)</td></tr>
+            <tr><td class="px-6 py-4 font-medium">USDT (Flash) On SOL</td><td class="px-6 py-4 text-secondary font-semibold">Up To 100 Trillion Units (15 Digits)</td></tr>
+            <tr><td class="px-6 py-4 font-medium">USD.T (Flash) On TRC20</td><td class="px-6 py-4 text-secondary font-semibold">Up To 100 Trillion Units (15 Digits)</td></tr>
+            <tr><td class="px-6 py-4 font-medium">USD.T (Flash) On ERC20</td><td class="px-6 py-4 text-secondary font-semibold">Up To 100 Trillion Units (15 Digits)</td></tr>
+            <tr><td class="px-6 py-4 font-medium">Programmable Static USDT Or Any Coin (Trust Wallet)</td><td class="px-6 py-4 text-secondary font-semibold">—</td></tr>
+          </tbody>
+        </table>
+        <div class="bg-slate-100 px-6 py-4 text-primary font-semibold text-sm uppercase tracking-wider">MANY MORE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO EVIDENCE – simple placeholders -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-semibold text-primary mb-10">VIDEO EVIDENCE OF THESE AVAILABLE TOKENS</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="aspect-video bg-slate-200 rounded-xl flex items-center justify-center relative overflow-hidden border border-slate-300 group">
+        <video class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition" muted loop playsinline poster="https://placehold.co/1920x1080/0F172A/FFFFFF?text=VIDEO+1">
+          <!-- <source src="video1.mp4" type="video/mp4"> -->
+        </video>
+        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition"></div>
+        <div class="z-10 text-center">
+          <span class="material-symbols-outlined text-7xl text-white drop-shadow-md">play_circle</span>
+          <p class="font-bold text-2xl text-white mt-2 drop-shadow-md">VIDEO 1</p>
+        </div>
+      </div>
+      <div class="aspect-video bg-slate-200 rounded-xl flex items-center justify-center relative overflow-hidden border border-slate-300 group">
+        <video class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition" muted loop playsinline poster="https://placehold.co/1920x1080/0F172A/FFFFFF?text=VIDEO+2">
+          <!-- <source src="video2.mp4" type="video/mp4"> -->
+        </video>
+        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition"></div>
+        <div class="z-10 text-center">
+          <span class="material-symbols-outlined text-7xl text-white drop-shadow-md">play_circle</span>
+          <p class="font-bold text-2xl text-white mt-2 drop-shadow-md">VIDEO 2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-16 px-6 bg-surface-alt">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-primary mb-12 text-center">FEATURES OF CUSTOM USDT (FLASH)</h2>
+      <div class="space-y-4">
+        <div class="flex items-center gap-5 p-5 bg-white rounded-xl border border-slate-200"><span class="material-symbols-outlined text-secondary text-3xl">swap_horiz</span><span class="font-medium text-primary text-lg">Transferable</span></div>
+        <div class="flex items-center gap-5 p-5 bg-white rounded-xl border border-slate-200"><span class="material-symbols-outlined text-secondary text-3xl">trending_up</span><span class="font-medium text-primary text-lg">Tradeable (For Advanced Trading Operations And NOT Swapping)</span></div>
+        <div class="flex items-center gap-5 p-5 bg-white rounded-xl border border-slate-200"><span class="material-symbols-outlined text-secondary text-3xl">attach_money</span><span class="font-medium text-primary text-lg">Displays The Dollar Value</span></div>
+        <div class="flex items-center gap-5 p-5 bg-white rounded-xl border border-slate-200"><span class="material-symbols-outlined text-secondary text-3xl">wallet</span><span class="font-medium text-primary text-lg">Compatible With Trust Wallet</span></div>
+        <div class="flex items-center gap-5 p-5 bg-white rounded-xl border border-slate-200"><span class="material-symbols-outlined text-secondary text-3xl">verified</span><span class="font-medium text-primary text-lg">Suitable For Proof Of Funds, Finance Audits Etc</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSACTION PROCEDURES -->
+  <section class="py-16 px-6 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-semibold text-primary mb-12 text-center">TRANSACTION PROCEDURES</h2>
+    <div class="space-y-8">
+      <div class="flex gap-5"><div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shrink-0">1</div><div><p class="text-lg text-primary font-medium">Buyer & Seller Discuss Over A Call (Token Type, CA, Quantity, Price, Date)</p></div></div>
+      <div class="flex gap-5"><div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shrink-0">2</div><div><p class="text-lg text-primary font-medium">Buyer & Seller Sign & Notarize DOA</p></div></div>
+      <div class="flex gap-5"><div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shrink-0">3</div><div><p class="text-lg text-primary font-medium">Buyer Meets With Seller (Physically Or On A Live Video/Audio Call)</p></div></div>
+      <div class="flex gap-5"><div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shrink-0">4</div><div><p class="text-lg text-primary font-medium">Buyer Makes Payment & Seller Sends Token (Per Tranche)</p></div></div>
+      <div class="flex gap-5"><div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shrink-0">5</div><div><p class="text-lg text-primary font-medium">Next Tranche Takes Place Until Transaction Is Concluded</p></div></div>
+    </div>
+  </section>
+
+  <!-- PRIMARY CTA -->
+  <section id="purchase" class="py-16 px-6 bg-surface-alt">
+    <div class="max-w-2xl mx-auto text-center bg-white p-12 rounded-2xl border border-slate-200 shadow-sm">
+      <h2 class="text-4xl font-bold text-primary mb-8">I WANT TO PURCHASE</h2>
+      <a href="https://wa.me/YOURNUMBER" target="_blank" class="cta-transition inline-block bg-primary text-white px-12 py-5 font-bold tracking-widest rounded-lg">CLICK HERE</a>
+      <p class="text-sm text-on-surface/70 mt-5">(WhatsApp Line)</p>
+    </div>
+  </section>
+
+  <!-- FAQS – JavaScript enhanced accordion -->
+  <section class="py-16 px-6 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-semibold text-primary mb-10 text-center">FAQS</h2>
+    <div class="divide-y divide-slate-200" id="faq-container">
+      <!-- FAQ items will be generated/controlled by JS, but static fallback -->
+      <div class="faq-item py-5 border-b border-slate-200">
+        <div class="flex justify-between items-center cursor-pointer faq-question">
+          <span class="font-semibold text-primary text-lg">What Do We Mean By Flash USDT?</span>
+          <span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+        </div>
+        <div class="faq-content">
+          <p class="pt-4 text-on-surface/80 leading-relaxed">We sell a custom token named USDT which is transferable, lasts forever, displays a 1:1 pegged price on trust wallet which some refer to as flash USDT; This USDT is completely different from USDT by Tether company and has no affiliation with USDT from Tether company. This custom USDT should not be used for any fraudulent purposes.</p>
+        </div>
+      </div>
+      <div class="faq-item py-5 border-b border-slate-200">
+        <div class="flex justify-between items-center cursor-pointer faq-question">
+          <span class="font-semibold text-primary text-lg">What Can I Do With The Flash USDT?</span>
+          <span class="material-symbols-outlined faq-icon">expand_more</span>
+        </div>
+        <div class="faq-content">
+          <p class="pt-4 text-on-surface/80 leading-relaxed">This custom USDT can be used for proof of funds, advanced trading operations, finance audits, project/software testing, blockchain education/training, mock trading, closed - loop incentive systems, internal simulations, demo for developers etc</p>
+        </div>
+      </div>
+      <div class="faq-item py-5 border-b border-slate-200">
+        <div class="flex justify-between items-center cursor-pointer faq-question">
+          <span class="font-semibold text-primary text-lg">How Do I Pay And Purchase These Tokens?</span>
+          <span class="material-symbols-outlined faq-icon">expand_more</span>
+        </div>
+        <div class="faq-content">
+          <p class="pt-4 text-on-surface/80 leading-relaxed">Simply click on the BUY HERE button which will lead you to our WhatsApp page where seamless payment and setup instructions will be given to you.</p>
+        </div>
+      </div>
+      <div class="faq-item py-5 border-b border-slate-200">
+        <div class="flex justify-between items-center cursor-pointer faq-question">
+          <span class="font-semibold text-primary text-lg">How Long Will It Take Me To Get My Token After Payment?</span>
+          <span class="material-symbols-outlined faq-icon">expand_more</span>
+        </div>
+        <div class="faq-content">
+          <p class="pt-4 text-on-surface/80 leading-relaxed">Immediately, while we are physically present with you or on a live video call.</p>
+        </div>
+      </div>
+      <div class="faq-item py-5 border-b border-slate-200">
+        <div class="flex justify-between items-center cursor-pointer faq-question">
+          <span class="font-semibold text-primary text-lg">What Are The Payment Options Available?</span>
+          <span class="material-symbols-outlined faq-icon">expand_more</span>
+        </div>
+        <div class="faq-content">
+          <p class="pt-4 text-on-surface/80 leading-relaxed">USDT (TRC20, BEP20, ERC20, SOL), BTC Or FIAT</p>
+        </div>
+      </div>
+      <div class="faq-item py-5 border-b border-slate-200">
+        <div class="flex justify-between items-center cursor-pointer faq-question">
+          <span class="font-semibold text-primary text-lg">Am I Certain That I Will Get My Token After Payment?</span>
+          <span class="material-symbols-outlined faq-icon">expand_more</span>
+        </div>
+        <div class="faq-content">
+          <p class="pt-4 text-on-surface/80 leading-relaxed">Absolutely. We are the most trustworthy miners and sellers of these tokens with a proven track record.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECOND CTA -->
+  <section class="py-10 px-6 bg-surface-alt">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-primary mb-6">I WANT TO PURCHASE</h2>
+      <a href="https://wa.me/YOURNUMBER" target="_blank" class="cta-transition inline-block bg-primary text-white px-10 py-4 font-bold tracking-widest rounded-lg">CLICK HERE (Whatsapp Line)</a>
+    </div>
+  </section>
+
+  <!-- COMMUNITY – real brand icons -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold text-primary mb-8 text-center">COMMUNITY</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <a href="https://wa.me/YOURNUMBER" target="_blank" class="flex flex-col items-center p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-sm transition">
+        <i class="fab fa-whatsapp text-4xl text-[#25D366] mb-3"></i>
+        <span class="font-medium text-primary text-center">Whatsapp: My Whatsapp Number Link</span>
+      </a>
+      <a href="https://www.globalcryptominers.com" target="_blank" class="flex flex-col items-center p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-sm transition">
+        <i class="fas fa-globe text-4xl text-secondary mb-3"></i>
+        <span class="font-medium text-primary text-center">Website: www.globalcryptominers.com</span>
+      </a>
+      <a href="https://t.me/gmc" target="_blank" class="flex flex-col items-center p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-sm transition">
+        <i class="fab fa-telegram-plane text-4xl text-[#26A5E4] mb-3"></i>
+        <span class="font-medium text-primary text-center">Telegram: @t/me/gmc</span>
+      </a>
+      <a href="https://youtube.com/@gmc" target="_blank" class="flex flex-col items-center p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-sm transition">
+        <i class="fab fa-youtube text-4xl text-[#FF0000] mb-3"></i>
+        <span class="font-medium text-primary text-center">Youtube: @gmc/youtube</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-primary mb-8">CONTACT:</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4">
+        <div class="flex gap-4"><span class="material-symbols-outlined text-secondary">location_on</span><span class="text-on-surface/80">Office Address: Virtual Office In Seychelles</span></div>
+        <div class="flex gap-4"><span class="material-symbols-outlined text-secondary">call</span><span class="text-on-surface/80">Whatsapp Number: +1 (800) 555‑0199</span></div>
+      </div>
+      <div class="text-center md:text-right">
+        <a href="https://wa.me/YOURNUMBER" target="_blank" class="cta-transition inline-block bg-primary text-white px-8 py-4 font-bold tracking-wider rounded-lg">CLICK HERE (Whatsapp Line)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-10 px-6 bg-surface-alt text-center">
+    <h2 class="text-3xl font-bold text-primary mb-6">I WANT TO PURCHASE</h2>
+    <a href="https://wa.me/YOURNUMBER" target="_blank" class="cta-transition inline-block bg-primary text-white px-12 py-5 font-bold tracking-widest rounded-lg">CLICK HERE (Whatsapp Line)</a>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-slate-200 py-10 text-center">
+  <p class="text-on-surface/60 text-sm font-medium uppercase tracking-widest">(c) Copyright 2026 || Global Crypto Miners</p>
+</footer>
+
+<script>
+  (function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const content = item.querySelector('.faq-content');
+      const icon = item.querySelector('.faq-icon');
+      
+      content.style.maxHeight = '0px';
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+
+        if (!isActive) {
+          item.classList.add('active');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+          item.classList.remove('active');
+          content.style.maxHeight = '0px';
+        }
+      });
+    });
+    
+    if (faqItems.length > 0) {
+      const first = faqItems[0];
+      first.classList.add('active');
+      first.querySelector('.faq-content').style.maxHeight = first.querySelector('.faq-content').scrollHeight + 'px';
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
